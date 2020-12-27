@@ -12,7 +12,7 @@ https://youtu.be/3xJPDxcaET4
 
 ### Key Features:
 
-- Online Clasrooms
+- Online Classrooms
 - Real-Time Text Chat
 - Gradebook & Assignments
 - Live Video Lectures
