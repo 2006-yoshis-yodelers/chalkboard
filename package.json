@@ -8,9 +8,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "build-client": "webpack",
-    "build-client-watch": "webpack -w",
-    "deploy": "script/deploy",
+    "build-client": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack",
+    "build-client-watch": "export SET NODE_OPTIONS=--openssl-legacy-provider && webpack -w",
+    "deploy": "export SET NODE_OPTIONS=--openssl-legacy-provider && script/deploy",
     "heroku-token": "script/encrypt-heroku-auth-token.js",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint-fix": "npm run lint -- --fix",

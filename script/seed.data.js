@@ -304,6 +304,13 @@ const user = [
     email: 'admin@email.com',
     password: '123',
     accountType: 'admin'
+  },
+  {
+    firstName: 'Emily',
+    lastName: 'Carter',
+    email: 'emilycarter@email.com',
+    password: '123',
+    accountType: 'admin'
   }
 ]
 
