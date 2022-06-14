@@ -1,6 +1,17 @@
 const course = [
   // when creating the courses, we also want to specify the ID.
   {
+    courseName: 'Elvish, the language of LOTR',
+    size: 40,
+    courseIntro:
+      "This course was taught by the world's foremost expert on this language, who was even a consultant to the makers of the films. While not practical, it certainly speaks to super fans of the series. ",
+    courseMoreInformation:
+      'Fans in the Madison, Wisconsin area with a desire to learn elvish might be interested to know that the University of Wisconsin has created a mini course on Sindarin to be taught by UW grad David Salo this spring. There are only a few spots left, so anyone wishing to enroll should check it out here. ',
+    courseSchedule:
+      'Schedule: \n M, W, F \n 10:00am - 11:00am \n T, Th \n 5:30pm - 7:00pm',
+    id: 123456789
+  },
+  {
     courseName: 'Econ 201',
     size: 30,
     courseIntro:
@@ -56,14 +67,12 @@ const course = [
     id: 5
   }, */
   {
-    courseName: 'Elvish, the language of LOTR',
-    size: 40,
+    courseName: 'Wolfram Summer School, 2022',
+    size: 45,
     courseIntro:
-      "This course was taught by the world's foremost expert on this language, who was even a consultant to the makers of the films. While not practical, it certainly speaks to super fans of the series. ",
-    courseMoreInformation:
-      'Fans in the Madison, Wisconsin area with a desire to learn elvish might be interested to know that the University of Wisconsin has created a mini course on Sindarin to be taught by UW grad David Salo this spring. There are only a few spots left, so anyone wishing to enroll should check it out here. ',
-    courseSchedule:
-      'Schedule: \n M, W, F \n 10:00am - 11:00am \n T, Th \n 5:30pm - 7:00pm',
+      'Before the Summer School (Week Zero) \n Virtual, Preparatory Week Zero \n Instructional, Social and Project-Based Programming',
+    courseMoreInformation: `Science & Technology Track \n Students will be provided with self-training tools and exercises in using the Wolfram language.  \n We study An Elementary Introduction to the Wolfram Language by Stephen Wolfram, front to back with the accompanying Interactive Open Course. \n It's our virtual, preparatory week zero. \n Instructional, Social and Project-Based Programming, Seven Days a Week. Case studies, live innovation and coding sessions, mentor pairing and selection with Stephen Wolfram, with hands-on, in-depth training on Wolfram Language technology development. Special-topic lectures like science-based careers, how to pick a research project, how to write a paper and how to start a technology company, as well as outlines of physics, aspects of scientific history and much more. `,
+    courseSchedule: 'Seven Days a Week',
     id: 6
   },
   {
@@ -235,6 +244,78 @@ const course = [
 
 // the users table contains both students and teachers
 const user = [
+  //
+  {
+    firstName: 'Emily',
+    lastName: 'Carter',
+    email: 'emilyc@email.com',
+    password: '123',
+    accountType: 'teacher'
+  },
+  {
+    firstName: 'Emily',
+    lastName: 'Carter',
+    email: 'emilyc@wolframresearch.com',
+    password: '123',
+    accountType: 'student'
+  },
+  {
+    firstName: 'Mads',
+    lastName: 'Bahrami',
+    email: 'madsb@wolframresearch.com',
+    password: '123',
+    accountType: 'student'
+  },
+  {
+    firstName: 'Dean',
+    lastName: 'Gladish',
+    email: 'gladishd@wolframresearch.com',
+    password: '123',
+    accountType: 'student'
+  },
+  //
+  {
+    firstName: 'Mads',
+    lastName: 'Bahrami',
+    email: 'madsb2@wolframresearch.com',
+    password: '123',
+    accountType: 'student'
+  },
+  {
+    firstName: 'Mads',
+    lastName: 'Bahrami',
+    email: 'madsb@wolframresearch.hire.trakstar.com',
+    password: '123',
+    accountType: 'teacher'
+  },
+  {
+    firstName: 'Stephen',
+    lastName: 'Wolfram',
+    email: 'wolframs@wolframresearch.com',
+    password: '123',
+    accountType: 'teacher'
+  },
+  {
+    firstName: 'Jonah',
+    lastName: 'Ullman',
+    email: 'teacher2@email.com',
+    password: '123',
+    accountType: 'teacher'
+  },
+  {
+    firstName: 'No',
+    lastName: 'Classes',
+    email: 'teachesNoClasses@email.com',
+    password: '123',
+    accountType: 'teacher'
+  },
+  {
+    firstName: 'Big',
+    lastName: 'Brother',
+    email: 'admin@email.com',
+    password: '123',
+    accountType: 'admin'
+  },
   {
     firstName: 'Khuong',
     lastName: 'Le',
@@ -262,59 +343,243 @@ const user = [
     email: 'student4@email.com',
     password: '123',
     accountType: 'student'
-  },
-  {
-    firstName: 'Fifth',
-    lastName: 'Student',
-    email: 'laststudent@email.com',
-    password: '123',
-    accountType: 'student'
-  },
-  {
-    firstName: 'Student',
-    lastName: 'A',
-    email: 'studentAllClasses@email.com',
-    password: '123',
-    accountType: 'student'
-  },
-  {
-    firstName: 'Travis',
-    lastName: 'Stratton',
-    email: 'teacher1@email.com',
-    password: '123',
-    accountType: 'teacher'
-  },
-  {
-    firstName: 'Jonah',
-    lastName: 'Ullman',
-    email: 'teacher2@email.com',
-    password: '123',
-    accountType: 'teacher'
-  },
-  {
-    firstName: 'No',
-    lastName: 'Classes',
-    email: 'teachesNoClasses@email.com',
-    password: '123',
-    accountType: 'teacher'
-  },
-  {
-    firstName: 'Big',
-    lastName: 'Brother',
-    email: 'admin@email.com',
-    password: '123',
-    accountType: 'admin'
-  },
-  {
-    firstName: 'Emily',
-    lastName: 'Carter',
-    email: 'emilycarter@email.com',
-    password: '123',
-    accountType: 'admin'
   }
 ]
 
 const assignment = [
+  {
+    assignmentName: 'GAME THEORY: EQUILIBRIUM SIMULATION PART 2',
+    assignmentType: 'project',
+    dueDate: new Date('July 11, 2022 8:10:00'),
+    courseId: 6,
+    totalPoints: 230,
+    weight: 70,
+    description: `How To Implement What We Want\n
+    Transform economic data from .csv into a more meaningful representation to help filter out
+    noise and aid in knowledge extraction.
+    \n
+    The key will be addressing the psychic element which we studied in Innovation &
+    Entrepreneurship at Carleton. We want to portray cause and effect interactions, or at least the
+    correlation across economic measures including GDP per capita in order to demonstrate how
+    equilibriums are properly obtained.\n
+    • Include the Pearson correlation coefficient, and elements of text sentiment analysis for
+    parsing economic data when we load it into Mathematica.\n
+    • Provide pre-flight middleware for handling data by mutating its form with proper indexing.\n
+    • Hopefully we’re able to provide Game Theory solutions to make a fun, exciting package
+    which provides insights out of the box for all.`
+  },
+  {
+    assignmentName: 'GAME THEORY: EQUILIBRIUM SIMULATION PART 1',
+    assignmentType: 'project',
+    dueDate: new Date('July 11, 2022 8:10:00'),
+    courseId: 6,
+    totalPoints: 220,
+    weight: 50,
+    description: `Idea & Objective Goals \n
+    To produce an equilibrium situation of the economy via game theory. We’ve got a performer on
+    Qooley who combines expert sleight of hand magic with comedy, juggling and other
+    vaudevillian variety skills to create a unique and amazing show, the House of Cards, Nashville.
+    Here, we hope to create a Nash equilibrium showing how we got here, the link between
+    creation and destruction based on our abstract, Schumpeterian model of human behavior.
+    \n
+    We can do this statistically; in machine learning there is a lot of statistics involved for which we
+    interact with the architecture of what we are building. In deep learning, instead of interacting
+    with the architecture of what we are building, we might have an auto-encoder do this
+    statistically, like having many neurons at once which are greater than the sum of their parts as
+    opposed to having a single neuron. As a data science person, we can focus on simulating the
+    economy through the middle land between data science and software engineering.`
+  },
+  {
+    assignmentName: 'PRIME NUMBER GENERATOR PART 2',
+    assignmentType: 'project',
+    dueDate: new Date('July 10, 2022 1:45:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 30,
+    description: `How To Implement What We Want \n
+    In object-oriented programming, we are always looking for primes. Ordinarily, finding prime
+    numbers is like making a resource load request; we get throttled because of a lack of
+    formatting, a lack of an ability to transmit objects into their final form. Units and being able to
+    specify units in-line helps us resolves values which cannot be determined from the information
+    given.\n
+    One aspect of this project would be counting the number of ways to define the space which is
+    not prime numbers; we often use 1 - P(event) as a metric.\n
+    • Organizing prime numbers by producing a map for which the degenerate elements are
+    primes, we can find communities between them in their dimension.\n
+    • Oftentimes we can simplify the process of division by looking at the last few integers with
+    disregard to the nearest least common multiple. For instance, dividing by 8 means looking at
+    everything after the thousandth digit.\n
+    • Making really complicated problems like this explain themselves to you in the code, making
+    understandable code which performs heavy lifting is the dream.`
+  },
+  {
+    assignmentName: 'PRIME NUMBER GENERATOR PART 1',
+    assignmentType: 'project',
+    dueDate: new Date('July 10, 2022 1:45:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 20,
+    description: `Idea & Objective Goals \n
+    Yes, it really is the question of finding the next prime number and providing methods for
+    determining relationships across the topology of integers via prime factorization, via
+    transposition and flattening of integers to best approximate the not-orbit for prime numbers.
+    \n
+    Find the possibility of finding squares and through process of elimination, provided that the
+    prime factorization of a square number must contain only even exponents, of finding the prime
+    numbers through the input and output paradigm of object-oriented programming.`
+  },
+  {
+    assignmentName: 'AUTONOMOUS OPTIMAL PATH FINDING',
+    assignmentType: 'project',
+    dueDate: new Date('July 20, 2022 10:30:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 60,
+    description: `Idea & Objective Goals \n
+    Provided that in Wolfram Mathematica, we are given integrals across continuous space which
+    occasionally results in conditional expressions regarding the domain across which the solution
+    is true, we want to know what kind of functions are currently defined on the space, and how we
+    arrived at the solution; this project aims to provide documentation for the Wolfram Language.
+    \n
+    Debugging means keeping track of many declared variable names. We only have 26 letters in
+    the alphabet, so if we’re looking for multi-step functions we might also define them at each
+    stage in the problem, in place through in-line escaping variables from the scope of their parent
+    function in order to momentarily test at checkpoints.`
+  },
+  {
+    assignmentName: 'STATISTICS PACKAGE: VARIABLE INTERACTION PART 2',
+    assignmentType: 'project',
+    dueDate: new Date('July 17, 2022 3:15:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 50,
+    description: `How To Implement What We Want \n
+    The evaluation of conditional expressions across continuous domains is the key aspect
+    to equation solving. Currently, when we quantify systems of equations and inequalities,
+    variable weight is by propensity to interact. Provided with imperfect raw data and our
+    goal of determining variable interaction, we want to know different approaches and
+    weighted values for these approaches.
+    \n
+    A meta-weighting of the system of weights, as well as what the variables represent,
+    should be paramount.\n
+    • We can implement this by adding a function, call it VisualizeInteraction, which can plot
+    variables and demonstrate how they interact in 3d space.\n
+
+    • Alternatively, add variable correlation as a graphical feature to the Plot function. Make
+    this an add-on for Wolfram as it exists in C, allow the level of interaction to be
+    visualized and summed across time series.\n
+    • X- and y- intercepts are numbers instead of points. Finding regression lines of
+    symmetry and reflecting the variables across the regression line, plotting the negative
+    side of a positively focused parabola across the x-axis can help us predict the way in
+    which the invisible negative side of the graph leads to imaginary solutions which
+    interact with what we do see.`
+  },
+  {
+    assignmentName: 'STATISTICS PACKAGE: VARIABLE INTERACTION PART 1',
+    assignmentType: 'project',
+    dueDate: new Date('July 17, 2022 3:15:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 20,
+    description: `Idea & Objective Goals \n
+    This has everything to do with the order in which data is loaded. When building Qooley.com, we
+    encountered elements on this.state appearing asynchronously because of recursive functions
+    which call themselves until the condition of all data on board is met. NestList function in
+    Wolfram Mathematica does this with trigonometric functions on expressions, n times. A project
+    in which variable interactions can be visualized to keep runtime flowing while continuing to
+    provide current quantitative or numerical variables (such as the age of individuals) versus
+    categorical or non-numerical variables (such as the eye color of individuals), visualizing the
+    interaction in one statistics multi-threaded package.
+    \n
+    Include all measures of central tendency, position, dispersion, frequency, weight variables
+    based on the frequency of interaction, map variables to their intersection and union, and
+    address the inclusion-exclusion principle within a one-stop shop for statistical variable
+    interaction in one Wolfram language package.`
+  },
+  {
+    assignmentName: 'AUTONOMOUS OPTIMAL PATH FINDING PART 2',
+    assignmentType: 'project',
+    dueDate: new Date('July 15, 2022 1:30:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 20,
+    description: `How To Implement What We Want \n
+    Identify conditions necessary for graphs to develop a certain way. Applications: This is the
+    cornerstone of modern CRISPR technology when we identify conditions to predict how a
+    protein unfolds, or when we want to understand the structure of an artificial neural network
+    analogous to the geometric shape of a geodesic dome.\n
+    Create an object-oriented graph traversal package which diminishes the user interface so that
+    graphs can be traversed as autonomously as possible. See applications to how objects such
+    as nanoparticles can be self-assembling and simulated within the existing parameters provided
+    by the Wolfram user.\n
+    • At Carleton when we graph ListPolarPlot in Chaotic Dynamics class, we specify incremental
+    parameters in proper format which takes advantage of the existing style, range, and axes.
+    • Create a function similar to MinimalPolynomial, JordanDecomposition, or
+    CharacteristicPolynomial for matrices, like OptimumTraversal.\n
+    • Include proper documentation with Mobile App Interface for the Wolfram Language.\n
+    • A complement to our idea of providing access to scope inside asynchronous callback loops.`
+  },
+  {
+    assignmentName: 'AUTONOMOUS OPTIMAL PATH FINDING PART 1',
+    assignmentType: 'project',
+    dueDate: new Date('July 15, 2022 1:30:00'),
+    courseId: 6,
+    totalPoints: 100,
+    weight: 20,
+    description: `Idea & Objective Goals \n
+    Avoid unnecessary computations. Geometric figures are not necessarily drawn to scale,
+    because geometric figures as we know them are merely representations of the abstract; that is,
+    they don't exist. Devise an algorithm for the purpose of exploring Wolfram graphs.
+    \n
+    Depth-first search for which we continue to the end of the branch or breadth-first search for
+    which we look around at the vicinity and our current object of connection. With no prior
+    knowledge of the geometric orientation of the graph, this can be visualized as a local navigation
+    problem, which is the goal: optimize paths both forward and backward.`
+  },
+  {
+    assignmentName: 'PROVIDING SCOPE FOR THE WOLFRAM LANGUAGE PART 2',
+    assignmentType: 'project',
+    dueDate: new Date('July 9, 2022 11:30:00'),
+    courseId: 6,
+    totalPoints: 30,
+    weight: 20,
+    description: `How To Implement What We Want \n
+    Keeping track of variable names requires us to declare and identify the stage. Changing values
+    during runtime at specified debugging points, like in VS Code, might allow us to identify both
+    positive and negative solutions to physical situations like the rate of heat transfer from a coffee
+    mug, portraying different solutions to difference of squares when, for instance, factoring prime
+    numbers.
+    \n
+    When we’re solving equations (simplifying fractions, integrating and summing over vast
+    distances), we want to be able to fit them in with sequentially obtained values.
+    \n
+    • During each multiplication, display the current scope of the project session at which events
+    are dispatch able.
+    \n
+    • Include previous and next simplification steps to complement native Breakpoints.
+    \n
+    • A package for answering our debugging questions in word form, during each step. \n
+    • Given that variables are already interchangeable, we can more easily provide context to the
+    user.`
+  },
+  {
+    assignmentName: 'PROVIDING SCOPE FOR THE WOLFRAM LANGUAGE PART 1',
+    assignmentType: 'project',
+    dueDate: new Date('July 9, 2022 11:30:00'),
+    courseId: 6,
+    totalPoints: 30,
+    weight: 20,
+    description: `Idea & Objective Goals \n
+    Provided that in Wolfram Mathematica, we are given integrals across continuous space which
+    occasionally results in conditional expressions regarding the domain across which the solution
+    is true, we want to know what kind of functions are currently defined on the space, and how we
+    arrived at the solution; this project aims to provide documentation for the Wolfram Language.
+    \n
+    Debugging means keeping track of many declared variable names. We only have 26 letters in
+    the alphabet, so if we’re looking for multi-step functions we might also define them at each
+    stage in the problem, in place through in-line escaping variables from the scope of their parent
+    function in order to momentarily test at checkpoints.`
+  },
   {
     assignmentName: 'Capstone',
     assignmentType: 'project',
@@ -440,6 +705,72 @@ const classroom = {
 }
 
 const enrollment = [
+  // {
+  //   classGrade: 100,
+  //   completionStatus: false,
+  //   courseId: 6,
+  //   userId: 14
+  // },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 6,
+    userId: 1
+  },
+  // {
+  //   classGrade: 100,
+  //   completionStatus: false,
+  //   courseId: 6,
+  //   userId: 2
+  // },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 6,
+    userId: 8
+  },
+  {
+    classGrade: 100,
+    completionStatus: true,
+    courseId: 123456789,
+    userId: 7
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 6
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 5
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 4
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 3
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 2
+  },
+  {
+    classGrade: 100,
+    completionStatus: false,
+    courseId: 123456789,
+    userId: 1
+  },
   {
     classGrade: 100,
     completionStatus: true,
@@ -836,8 +1167,10 @@ const enrollment = [
 
 const gradebook = [
   {
+    status: 'completed',
     assignmentId: 1,
-    userId: 1
+    userId: 12,
+    individualGrade: 100
   },
   {
     status: 'completed',
