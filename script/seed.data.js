@@ -255,7 +255,7 @@ const user = [
   {
     firstName: 'Emily',
     lastName: 'Carter',
-    email: 'emilyc@wolframresearch.com',
+    email: 'cartere@wolframresearch.com',
     password: '123',
     accountType: 'student'
   },
