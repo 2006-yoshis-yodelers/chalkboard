@@ -275,9 +275,9 @@ const user = [
   },
   //
   {
-    firstName: 'Mads',
-    lastName: 'Bahrami',
-    email: 'madsb2@wolframresearch.com',
+    firstName: 'Kanishka',
+    lastName: 'Desai',
+    email: 'desaik@wolframresearch.com',
     password: '123',
     accountType: 'student'
   },
